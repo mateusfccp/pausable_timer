@@ -20,7 +20,7 @@ jobs:
     - name: Check latest version ${{ env.major }} docker image
       run: |
         token=$(curl -s -H "Content-Type: application/json" \
-              "https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/dart:pull&offline_token=true" | \
+              "https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/dart:pull" | \
             jq -r .token)
         digest_test() {
           curl -s -H "Content-Type: application/json" \
@@ -37,7 +37,7 @@ jobs:
         digest_current=$(digest $major.$latest_minor)
         if test "$digest_stable" = null -o "$digest_current" = null
         then
-          echo "Could not get the stable image digest ($digest_stable) or the currrent ($major.$latest_minor)" \
+          echo "Could not get the stable image digest ($digest_stable) or the current ($major.$latest_minor)" \
             "image digest ($digest_current)." >&2
             exit 1
         fi
