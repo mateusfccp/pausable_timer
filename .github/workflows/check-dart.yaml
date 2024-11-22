@@ -17,9 +17,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Install dependencies
-      run: sudo apt update && sudo apt install curl jq
-
     - name: Check latest version ${{ env.major }} docker image
       run: |
         token=$(curl -s -H "Content-Type: application/json" \
@@ -29,13 +26,13 @@ jobs:
           curl -s -H "Content-Type: application/json" \
                   -H "Authorization: Bearer $token" \
                      "https://index.docker.io/v2/library/dart/manifests/$1" | \
-              jq -r '.fsLayers[0].blobSum'
+              jq -r '.manifests[0].annotations["org.opencontainers.image.version"]'
         }
         digest_stable=$(digest stable)
         digest_current=$(digest $major.$latest_minor)
         if test "$digest_stable" = null -o "$digest_current" = null
         then
-          echo "Could not get the stable image digest ($digest_stable) or the currrent ($major.$latest_minor)" \
+          echo "Could not get the stable image digest ($digest_stable) or the current ($major.$latest_minor)" \
             "image digest ($digest_current)." >&2
             exit 1
         fi
