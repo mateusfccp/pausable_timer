@@ -17,19 +17,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Install dependencies
-      run: sudo apt update && sudo apt install curl jq
+    # - name: Install dependencies
+      # run: sudo apt update && sudo apt install curl jq
 
     - name: Check latest version ${{ env.major }} docker image
       run: |
         token=$(curl -s -H "Content-Type: application/json" \
-              "https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/dart:pull" | \
+              "https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/dart:pull&offline_token=true" | \
             jq -r .token)
+        digest_test() {
+          curl -s -H "Content-Type: application/json" \
+                  -H "Authorization: Bearer $token" \
+                     "https://index.docker.io/v2/library/dart/manifests/$1"
+        }
         digest() {
           curl -s -H "Content-Type: application/json" \
                   -H "Authorization: Bearer $token" \
                      "https://index.docker.io/v2/library/dart/manifests/$1" | \
-              jq -r '.fsLayers[0].blobSum'
+              jq -r '.manifests[0].annotations["org.opencontainers.image.version"]'
         }
         digest_stable=$(digest stable)
         digest_current=$(digest $major.$latest_minor)
