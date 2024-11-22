@@ -17,9 +17,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # - name: Install dependencies
-      # run: sudo apt update && sudo apt install curl jq
-
     - name: Check latest version ${{ env.major }} docker image
       run: |
         token=$(curl -s -H "Content-Type: application/json" \
