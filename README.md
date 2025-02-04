@@ -21,5 +21,7 @@ and `.resume`).
 There are also additional getters to check if the timer is active, paused,
 expired or cancelled.
 
-More detailed examples can be found in the [example](/example) folder.
+More detailed examples can be found in the
+[example](https://github.com/mateusfccp/pausable_timer/tree/documentation_updates/example)
+folder.
 
