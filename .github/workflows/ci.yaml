@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        dart_version: ["3.0", "3.1", "3.2", "3.3", "3.4", "3.5"]
+        dart_version: ["3.0", "3.1", "3.2", "3.3", "3.4", "3.5", "3.6"]
 
     runs-on: ubuntu-latest
 
@@ -37,15 +37,3 @@ jobs:
 
     - name: Run tests
       run: $(command -v pub || echo dart pub) run test --coverage=./coverage
-
-    - name: Convert coverage to LCOV
-      run: $(command -v pub || echo dart pub) run coverage:format_coverage
-          --lcov --packages=.dart_tool/package_config.json --report-on=lib
-          -i coverage -o coverage/lcov.info
-
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-        directory: coverage/lcov.info
-        flags: unit,dart${{ matrix.dart_version }}
