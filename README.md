@@ -5,7 +5,6 @@
 [![Latest Dart version](https://github.com/mateusfccp/pausable_timer/actions/workflows/check-dart.yaml/badge.svg)](https://github.com/mateusfccp/pausable_timer/actions/workflows/check-dart.yaml)
 [![pub package](https://img.shields.io/pub/v/pausable_timer.svg)](https://pub.dev/packages/pausable_timer)
 [![pub points](https://img.shields.io/pub/points/pausable_timer)](https://pub.dev/packages/pausable_timer/score)
-[![popularity](https://img.shields.io/pub/popularity/pausable_timer)](https://pub.dev/packages/pausable_timer/score)
 [![likes](https://img.shields.io/pub/likes/pausable_timer)](https://pub.dev/packages/pausable_timer/score)
 
 A Dart timer that can be paused, resumed and reset.
