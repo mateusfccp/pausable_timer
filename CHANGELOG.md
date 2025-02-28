@@ -27,7 +27,7 @@
 - Update and test against Dart 3.1.
 
 [More details available in
-GitHub](https://github.com/llucax/pausable_timer/milestone/14?closed=1).
+GitHub](https://github.com/mateusfccp/pausable_timer/milestone/14?closed=1).
 
 ## 2.0.0
 
@@ -44,18 +44,18 @@ Flutter, and while I enjoy maintaining open source projects, it is becoming
 more and more difficult to keep up to date with changes in Dart and maintaining
 this project, so **I'm looking for a maintainer willing to take over this
 project** to ensure its health in the future.  Please [get in
-touch](https://github.com/llucax/pausable_timer/discussions/55) if you are
+touch](https://github.com/mateusfccp/pausable_timer/discussions/55) if you are
 interested.
 
 [More details available in
-GitHub](https://github.com/llucax/pausable_timer/milestone/13?closed=1).
+GitHub](https://github.com/mateusfccp/pausable_timer/milestone/13?closed=1).
 
 ## 1.0.0+7
 
 - Update and test against Dart 2.19.
 
 [More details available in
-GitHub](https://github.com/llucax/pausable_timer/milestone/12?closed=1).
+GitHub](https://github.com/mateusfccp/pausable_timer/milestone/12?closed=1).
 
 ## 1.0.0+6
 
@@ -63,21 +63,21 @@ GitHub](https://github.com/llucax/pausable_timer/milestone/12?closed=1).
 - Update and test against Dart 2.18.
 
 [More details available in
-GitHub](https://github.com/llucax/pausable_timer/milestone/11?closed=1).
+GitHub](https://github.com/mateusfccp/pausable_timer/milestone/11?closed=1).
 
 ## 1.0.0+5
 
 - Update and test against Dart 2.17.
 
 [More details available in
-GitHub](https://github.com/llucax/pausable_timer/milestone/9?closed=1).
+GitHub](https://github.com/mateusfccp/pausable_timer/milestone/9?closed=1).
 
 ## 1.0.0+4
 
 - Update and test against Dart 2.16.
 
 [More details available in
-GitHub](https://github.com/llucax/pausable_timer/milestone/8?closed=1).
+GitHub](https://github.com/mateusfccp/pausable_timer/milestone/8?closed=1).
 
 ## 1.0.0+3
 
@@ -85,7 +85,7 @@ GitHub](https://github.com/llucax/pausable_timer/milestone/8?closed=1).
 - Update dependencies.
 
 [More details available in
-GitHub](https://github.com/llucax/pausable_timer/milestone/8?closed=1).
+GitHub](https://github.com/mateusfccp/pausable_timer/milestone/8?closed=1).
 
 ## 1.0.0+2
 
@@ -94,7 +94,7 @@ GitHub](https://github.com/llucax/pausable_timer/milestone/8?closed=1).
 - Update and test against Dart 2.14.
 
 [More details available in
-GitHub](https://github.com/llucax/pausable_timer/milestone/7?closed=1).
+GitHub](https://github.com/mateusfccp/pausable_timer/milestone/7?closed=1).
 
 ## 1.0.0+1
 
