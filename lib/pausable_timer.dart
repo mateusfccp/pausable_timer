@@ -10,7 +10,7 @@ import 'package:clock/clock.dart' show clock;
 ///
 /// This implementation is roughly based on
 /// [this comment](https://github.com/dart-lang/sdk/issues/43329#issuecomment-687024252).
-final class PausableTimer implements Timer {
+class PausableTimer implements Timer {
   /// The [Zone] where the [_callback] will be run.
   ///
   /// Dart generally calls asynchronous callbacks in the zone where they were
