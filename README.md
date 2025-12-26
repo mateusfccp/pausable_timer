@@ -10,7 +10,7 @@
 A Dart timer that can be paused, resumed and reset.
 
 `PausableTimer` aims to be as similar and compatible as possible with Dart's
-`Timer`, while providing extra funcionality.
+`Timer`, while providing extra functionality.
 
 ## How to use it
 
